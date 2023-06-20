@@ -1,0 +1,138 @@
+@import '../helpers/fonts';
+@import '../helpers/mixins';
+@import '../helpers/_color';
+
+
+
+.navbar{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    .navbar-brand{
+        @media (max-width:576px){
+            width: 20%;
+            padding:10px 0;
+            transform: translateY(-5px);
+        }
+        img{
+            width: 100%;
+            @media (max-width:576px){
+                width: 60%;
+            }
+        }
+    }
+    .navbar-toggler{
+        border-color: $primary_color;
+        line-height: 1;
+        padding: .25rem .75rem .6rem;
+        @media (max-width:576px){
+            line-height: .5;
+            padding: .1rem .3rem .5rem;
+        }
+
+        %line-mode{
+            position: absolute;
+            content: "";
+            width: 22px;
+            height: 2px;
+            background-color: #f5af00;
+            @media (max-width:576px) {
+                width: 15px;
+            }
+        }
+        
+        .navbar-toggler-icon{
+            background-image: none;
+            width: 26px;
+            height: 2px;
+            background-color: $primary_color;
+            position: relative;
+            @media (max-width:576px) {
+                width: 19px;
+            }
+            &::before{
+                top: 8px;
+                @include transform-left;
+                @media (max-width:576px) {
+                    top:5px;
+                }
+            }
+            &::after{
+                top: -8px;
+                @include transform-left;
+                @media (max-width:576px) {
+                    top:-5px;
+                }
+            }
+
+            &::before{
+                @extend %line-mode;
+            }
+
+            &::after{
+                @extend %line-mode;
+            }
+        }&:focus{
+            box-shadow: none;
+        }
+    }
+    .navbar-collapse{
+        flex-grow: 0;
+        .font-load{
+            font-family: $alumni_font;
+            .nav-link{
+                color: white;
+                letter-spacing: 1px;
+                font-size: 1.3rem;
+                &.active {
+                    color:$primary_color;
+                } 
+                &:hover{
+                    color:$primary_color;
+                }
+                &.change{
+                    color:black;
+                    &:hover {
+                        color: $primary_color;
+                    }
+                    &.active{
+                        color: $primary_color;
+                    }
+                    @media (max-width:991px){
+                        color:white;
+                    }
+                }
+                @media (max-width:991px){
+                    margin:auto;
+                }
+                &:first-child{
+                    @media (max-width:991px){
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        @media (max-width:991px){
+            background: black;
+            overflow-x: scroll;
+            overflow-y: scroll;
+            padding: 15px 0;
+        }
+
+        @media (min-width:576px) and (max-width:991px){
+            margin-top: 30px;
+        }
+    }
+    &.nav-background{     
+        background-color: white;
+    }
+    @media (max-width:576px){
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+}
+
+

@@ -1,0 +1,130 @@
+{
+    "services" : [
+        {
+            "id" : 1,
+            "img_source" : "/images/service1.png",
+            "title" : "Fast Operations",
+            "body" : "Cobuild impresses you with fully responsiveness and highly customization."
+        },
+
+        {
+            "id" : 2,
+            "img_source" : "/images/service2.png",
+            "title" : "Renovation",
+            "body" : "Cobuild impresses you with fully responsiveness and highly customization."
+        },
+
+        {
+            "id" : 3,
+            "img_source" : "/images/service3.png",
+            "title" : "Consultation",
+            "body" : "Cobuild impresses you with fully responsiveness and highly customization."
+        },
+
+        {
+            "id" : 4,
+            "img_source" : "/images/service4.png",
+            "title" : "Architecture",
+            "body" : "Cobuild impresses you with fully responsiveness and highly customization. "
+        }
+    ],
+
+    "portfolio" : [
+        {
+            "id" : 1,
+            "img_source" : "/images/work1.jpg",
+            "img_name" : "Tower Building",
+            "category" : "building" 
+        },
+
+        {
+            "id" : 2,
+            "img_source" : "/images/work2.jpg",
+            "img_name" : "Renovation",
+            "category" : "construction"
+        },
+
+        {
+            "id" : 3,
+            "img_source" : "/images/work3.jpg",
+            "img_name" : "Hospital Building",
+            "category" : "planning"
+        },
+
+        {
+            "id" : 4,
+            "img_source" : "/images/work4.jpg",
+            "img_name" : "Tower Building",
+            "category" : "construction"
+
+        },
+
+        {
+            "id" : 5,
+            "img_source" : "/images/work5.jpg",
+            "img_name" : "Tower Renovation",
+            "category" : "building"
+        },
+
+        {
+            "id" : 6,
+            "img_source" : "/images/work6.jpg",
+            "img_name" : "Planning",
+            "category" : "planning"
+        }
+        
+
+    ],
+
+    "clients" : [
+        {
+            "id" : 1,
+            "img_source" : "/images/client1.png",
+            "body" : "“It’s just brilliant. I will recommend Cobuild to everyone I know! I’m really glad to these guys got Cobuild out there.” ",
+            "alt_name" : "First-slider",
+            "img_name" : "Gene Stevens"
+        },
+
+        {
+            "id" : 2,
+            "img_source" : "/images/client2.jpg",
+            "body" : "“Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma - which is living with the results of other people's thinking.”",
+            "alt_name" : "Seconde-slider",
+            "img_name" : "Johnnatan Smiths"
+        },
+
+        {
+            "id" : 3,
+            "img_source" : "/images/client3.jpg",
+            "body" : "“We are so excited to launch our new company, By using Cobuild it has a great features, I think you are all about to make me happy.”",
+            "alt_name" : "Third-slider",
+            "img_name" : "Tomas Kiplings"
+        }
+    ],
+
+    "contact" : [
+        {
+            "id" : 1,
+            "icon_name" : "fa fa-home fa-4x",
+            "title" : "Address",
+            "first_body" : "220 Petersham town, Wardell",
+            "last_body" : "street, Australia PA 6550."
+        },
+
+        {
+            "id" : 2,
+            "icon_name" : "fa fa-mobile fa-4x",
+            "title" : "Phone",
+            "first_body" : "Phone: (04) 491 570 110",
+            "last_body" : "Fax: +04 642 021 332"
+        },
+
+        {
+            "id" : 3,
+            "icon_name" : "fa fa-envelope-o fa-4x",
+            "title" : "Email",
+            "first_body" : "support@zytheme.com",
+            "last_body" : "Twitter: @zytheme"
+        }
+    ]
+}

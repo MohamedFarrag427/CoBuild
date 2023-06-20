@@ -1,0 +1,35 @@
+@import '../helpers/color';
+@import '../helpers/fonts';
+@import '../helpers/mixins';
+
+.clients{
+    @include padding;
+    .client-say{
+        text-transform: capitalize;
+        color: $secondary_color;
+        font-family: $lora_font;
+        img{
+            border-radius: 50%;
+        }
+        span{
+            text-align: right;
+            width: 70%;
+            display: inline-block;
+        }
+        &:first-child{
+            img{
+                width: 75px;
+                height: 75px;
+            }
+        }
+        p{
+            margin-top: 30px;
+        }
+        @media (max-width:767px) {
+            margin-bottom: 30px;
+        } 
+    }
+    @media (max-width:767px) {
+        padding-top: 75px;
+    }
+}

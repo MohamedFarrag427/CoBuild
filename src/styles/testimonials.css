@@ -1,0 +1,33 @@
+.clients {
+  padding: 100px 0;
+}
+.clients .client-say {
+  text-transform: capitalize;
+  color: #999999;
+  font-family: "lora", serif;
+}
+.clients .client-say img {
+  border-radius: 50%;
+}
+.clients .client-say span {
+  text-align: right;
+  width: 70%;
+  display: inline-block;
+}
+.clients .client-say:first-child img {
+  width: 75px;
+  height: 75px;
+}
+.clients .client-say p {
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .clients .client-say {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .clients {
+    padding-top: 75px;
+  }
+}/*# sourceMappingURL=testimonials.css.map */

@@ -1,0 +1,32 @@
+.contact-content {
+  padding: 100px 0;
+}
+.contact-content .contact-item {
+  text-align: center;
+}
+.contact-content .contact-item i {
+  color: #f5af00;
+  text-align: center;
+}
+.contact-content .contact-item h4 {
+  margin: 15px 0;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 25px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+}
+.contact-content .contact-item p {
+  font-family: sans-serif;
+  margin-bottom: 5px;
+  color: #999999;
+}
+@media (max-width: 991px) {
+  .contact-content .contact-item {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .contact-content {
+    padding: 50px 0;
+  }
+}/*# sourceMappingURL=contact.css.map */

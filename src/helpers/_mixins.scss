@@ -1,0 +1,46 @@
+@import'./fonts';
+
+@mixin caption-box {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+@mixin caption-header {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-family: $noto_font;
+}
+
+@mixin caption-title {
+    width: 90%;
+    margin: auto;
+    color: #999999;
+    font-size: 15px;
+    font-family: $nanum_font;
+    
+}
+
+@mixin padding{
+    padding: 100px 0;
+}
+
+
+@mixin transform-center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+@mixin transform-left{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin overlay{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+

@@ -1,0 +1,57 @@
+.block {
+  display: block;
+}
+.block .modal-lay {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+.block .modal-content {
+  z-index: 1500;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  background: black;
+  padding: 50px 20px;
+}
+.block .modal-content .slide-img span {
+  z-index: 1500;
+  color: white;
+  position: absolute;
+  display: block;
+  margin-top: 10px;
+  font-family: "Satisfy";
+}
+.block .next, .block .prev, .block .closed {
+  position: fixed;
+  z-index: 1500;
+  background: none;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.block .next i, .block .prev i, .block .closed i {
+  color: white;
+  cursor: pointer;
+}
+.block .closed {
+  top: 15px;
+  right: 5px;
+}
+.block .prev {
+  left: 55px;
+}
+.block .next {
+  right: 55px;
+}
+.hide {
+  display: none;
+}/*# sourceMappingURL=slider.css.map */

@@ -1,0 +1,120 @@
+.skills {
+  padding: 100px 0;
+}
+.skills .row {
+  justify-content: space-between;
+}
+.skills .row .skill-info {
+  text-transform: capitalize;
+  font-family: sans-serif;
+  letter-spacing: 0.6px;
+}
+.skills .row .skill-info h2 {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 2.5rem;
+}
+@media (max-width: 567px) {
+  .skills .row .skill-info h2 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .skills .row .skill-info h2 {
+    font-size: 2rem;
+  }
+}
+.skills .row .skill-info p {
+  margin-top: 30px;
+  color: #999999;
+}
+@media (max-width: 567px) {
+  .skills .row .skill-info p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .skills .row .skill-info p {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .skills .row .skill-info {
+    margin-bottom: 30px;
+  }
+}
+.skills .row .target-item {
+  margin-bottom: 40px;
+}
+.skills .row .target-item h4 {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Satisfy";
+}
+.skills .row .target-item .target {
+  background-color: #f5af00;
+  height: 5px;
+  border-radius: 2px;
+}
+.skills .row .target-item:nth-child(1) .target {
+  width: 85%;
+}
+.skills .row .target-item:nth-child(2) .target {
+  width: 60%;
+}
+.skills .row .target-item:nth-child(3) .target {
+  width: 70%;
+}
+.skills .row .target-item:nth-child(4) .target {
+  width: 40%;
+}
+.skills .comp {
+  background-color: #f5af00;
+  padding: 50px 0;
+  margin-top: 75px;
+}
+.skills .comp .comp-content {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Alumni Sans", sans-serif;
+}
+.skills .comp .comp-content h3 {
+  color: white;
+  font-size: 2.5rem;
+}
+@media (max-width: 767px) {
+  .skills .comp .comp-content h3 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .skills .comp .comp-content h3 {
+    font-size: 2rem;
+  }
+}
+.skills .comp .comp-content button {
+  border: 1px solid white;
+  outline: none;
+  background-color: unset;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 22px;
+}
+.skills .comp .comp-content button:hover {
+  background-color: white;
+  color: #f5af00;
+}
+@media (max-width: 767px) {
+  .skills .comp .comp-content {
+    display: block;
+    text-align: center;
+  }
+}
+@media (max-width: 567px) {
+  .skills {
+    padding: 50px 0;
+  }
+}/*# sourceMappingURL=skills.css.map */

@@ -1,0 +1,94 @@
+@import '../helpers/fonts';
+@import '../helpers/mixins';
+@import '../helpers/color';
+
+
+.carousel{
+    .carousel-item{
+        .slide-layer{
+            position: absolute;
+            @include overlay;
+            background-color: rgba(0, 0, 0, .5);
+            .carousel-caption{
+                font-family: $alumni_font;
+                position: absolute;
+                @include transform-center;
+                @media (max-width:767px) {
+                    bottom: 0;
+                }
+                width:100%;
+                h1{
+                    font-size: 4rem;
+                    @media (max-width:767px){
+                        font-size: 6vw;
+                    }
+                }
+                p{
+                    margin: 15px 0 30px;
+                    text-transform: capitalize;
+                    font-size: 1.5rem;
+                    letter-spacing: .5px;
+                    @media (max-width:767px){
+                        font-size: 4vw;
+                        margin: 5px 15px;
+                    }
+                }
+                .btn{
+                    width: 140px;
+                    height: 40px;
+                    text-transform: capitalize;
+                    letter-spacing: .6px;
+                    letter-spacing: .5px;
+                    font-size: 1.2rem;
+                    color:$primary_color;
+                    border-color:$primary_color;
+                    &.focus{
+                        box-shadow: none;
+                    }
+                    &:hover{
+                        background-color:$primary_color;
+                        color: white;
+                        transition: background .7s;
+                    }
+                    @media (max-width:767px){
+                        max-width: 120px;
+                        height: 35px;
+                        font-size: .8rem;
+                    }
+                    
+                }
+            }
+        }
+        &:last-child .slide-layer{
+            background-color: rgba(0, 0, 0, .7);
+        }
+    }
+    .carousel-indicators [data-bs-target]{
+        @media (max-width:767px) {
+            display: none;
+        }
+    }
+    .carousel-control-prev{
+        @media (max-width:767px) {
+            display: none;
+        }
+    }
+    .carousel-control-next{
+        @media (max-width:767px) {
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+@import './mixins';
+
+
+#modal{
+    .block{
+        display: block;
+        .modal-lay{ 
+            z-index: 1000;
+            position: fixed;
+            @include overlay;
+            background-color:black;
+            opacity: .7;
+        }
+        .modal-content{
+            z-index: 1500;
+            position: fixed;
+            @include transform-center;
+            width: auto;
+            height:auto;
+            background:black;
+            padding: 50px 20px;
+            .slide-img{
+                span{
+                    z-index: 1500;
+                    color: white;
+                    position:absolute;
+                    display:block;
+                    margin-top: 10px;
+                    font-family: 'Satisfy';
+                }
+            } 
+        }
+        %fixed-modal{
+            position:fixed;
+            z-index: 1500;
+            background:none;
+            border: none;
+            top: 50%;
+            transform:translateY(-50%);
+            @media (max-width:767px) {
+                top: 10%;
+            }
+        }
+        %modal-icon{
+            color: white;
+            cursor: pointer;
+        }
+    
+        .closed{
+            @extend %fixed-modal;
+            top: 15px;
+            right: 5px;
+            i{
+                @extend %modal-icon;
+            }
+        }
+    
+        .prev{
+            left: 55px;
+            @extend %fixed-modal; //grobing
+            i{
+                @extend %modal-icon;
+            }
+        }
+        .next{
+            right: 55px;
+            @extend %fixed-modal; //grobing
+            i{
+                @extend %modal-icon;
+            }
+        }
+        
+    }
+    .hide{
+        display:none;
+    }
+}

@@ -1,0 +1,34 @@
+@import '../helpers/fonts';
+@import '../helpers/_color';
+@import '../helpers/_mixins';
+
+
+.contact-content{
+    @include padding;
+    .contact-item{
+        text-align: center;
+        i{
+            color:$primary_color;
+            text-align: center;
+        }
+        h4{
+            margin: 15px 0;
+            font-family: $alumni_font;
+            font-size: 25px;
+            letter-spacing: .6px;
+            font-weight: 600;
+        }
+        p{
+            font-family: sans-serif;
+            margin-bottom: 5px;
+            color: $secondary_color;
+        }
+        @media (max-width:991px) {
+            margin-bottom: 30px;
+        }
+    } 
+    @media (max-width:991px) {
+        padding: 50px 0;
+    }
+}
+
